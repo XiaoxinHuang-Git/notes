@@ -8,7 +8,7 @@
 
 | 月份 | 内容 |
 |---|---|
-| [2026-11](notes/2026-11.md) | PDO 预处理、Nginx proxy_pass 路径规则 |
+| [2026-11](notes/2026-11.md) | PDO 预处理、Nginx proxy_pass 路径规则、MySQL 隐式类型转换 |
 
 ## 约定
 
