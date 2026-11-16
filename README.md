@@ -8,7 +8,7 @@
 
 | 月份 | 内容 | 条数 |
 |---|---|---|
-| [2026-11](notes/2026-11.md) | PDO 预处理、Nginx proxy_pass / HTTPS / alias、MySQL 隐式类型转换 / 慢查询、Redis 分布式锁 / Session、Go defer / context、ThinkPHP 注入、Docker 多阶段构建 | 13 条 |
+| [2026-11](notes/2026-11.md) | PDO 预处理、Nginx proxy_pass / HTTPS / alias、MySQL 隐式类型转换 / 慢查询 / 连接池、Redis 分布式锁 / Session、Go defer / context、ThinkPHP 注入、Docker 多阶段构建 / 日志轮转、缓存击穿 / JWT 安全 / API 限流 | 18 条 |
 
 ## 快速索引
 
@@ -21,6 +21,7 @@
 ### MySQL
 - 字符串列与数字比较索引用不上 → [11-08](notes/2026-11.md#11-08-字符串列与数字比较会让索引失效还会多匹配出数据)
 - 慢查询完整排查步骤 → [11-10](notes/2026-11.md#11-10-mysql-慢查询完整排查步骤)
+- 连接池三个关键参数 → [11-14](notes/2026-11.md#11-14-mysql-连接池的三个关键参数)
 
 ### Redis
 - 分布式锁的三个正确姿势 → [11-09](notes/2026-11.md#11-09-redis-分布式锁的三个正确姿势)
@@ -34,8 +35,18 @@
 - defer 和 named return → [11-09](notes/2026-11.md#11-09-go-中-defer-和-named-return-一起用时会修改返回值)
 - context 超时与取消 → [11-10](notes/2026-11.md#11-10-go-的-context-在超时和取消时的正确用法)
 
+### 缓存
+- 击穿 vs 穿透 vs 雪崩 → [11-11](notes/2026-11.md#11-11-缓存击穿-vs-缓存穿透-vs-缓存雪崩-三个概念和解决方案完全不同)
+
+### 安全
+- JWT 三个常见安全坑 → [11-12](notes/2026-11.md#11-12-jwt-的三个常见安全坑)
+
+### API
+- 限流的四种实现方式 → [11-13](notes/2026-11.md#11-13-api-限流的四种实现方式)
+
 ### DevOps
 - Docker 多阶段构建瘦身 → [11-10](notes/2026-11.md#11-10-docker-多阶段构建瘦身镜像)
+- Docker 日志驱动 + logrotate → [11-15](notes/2026-11.md#11-15-docker-容器日志驱动--logrotate-防止磁盘被日志撑爆)
 
 ## 约定
 
